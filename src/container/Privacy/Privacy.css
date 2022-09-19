@@ -1,0 +1,47 @@
+.mainContainer {
+  height: 100%;
+  background: transparent;
+  padding: 2em;
+}
+.mainContainer h3{
+  font-family: Quicksand;
+  font-size: large;
+  color: var(--color-secondary);
+  padding: .5em;
+  padding-top: 3em;
+}
+.mainContainer h4, h5{
+  font-family: Quicksand;
+  font-size: medium;
+  padding: .8em 0;
+  text-align: start;
+}
+.mainContainer h4 strong{
+  font-family: Quicksand;
+  font-size: medium;
+  font-weight: 700;
+  padding: .5em;
+}
+.mainContainer ul li {
+  font-family: Quicksand;
+  font-size:small;
+  padding: .5em;
+  text-align: start;
+}
+.mainContainer ul li b {
+  font-family: Quicksand;
+  font-size:smaller;
+  padding: .5em;
+  text-align: start;
+}
+.mainContainer p {
+  font-family: Quicksand;
+  font-size:small;
+  padding: .5em;
+  text-align: justify;
+}
+.mainContainer img {
+ width: 20%;
+}
+
+

@@ -1,0 +1,166 @@
+.foodlist {
+    margin:0;
+    height: 60vh;
+    background: url("../../assets/gr2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    position: relative;
+    overflow: hidden;    
+}
+.foodlist h1 {
+    position: absolute;
+    font-size: clamp(2.5rem, 10vw + 1rem, 8rem);
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform:translateY(-50%);
+    opacity: 0;
+}
+
+.foodlist-glass {
+   position: absolute; 
+   width: 64%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: rgba(248, 248, 255, 0.25);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter:blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.01);
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   border-bottom-right-radius: 90%;
+   border-top-right-radius: 10%;
+}
+
+.foodlist-h1-glass {
+    background: url("../../assets/bg8.jpg")
+    center no-repeat fixed;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    top: 20%;
+    right: 0;
+    animation: text1 0.8s ease-in forwards;
+}
+.foodlist-h1-regular {
+    color: var(--color-secondary);
+    top: 40%;
+    left: 64%;
+    animation: text2 0.8s ease-in forwards ;
+    animation-delay: 500ms;
+}
+.foodlist-glass > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5em;
+}
+.foodlist-glass > div div {
+    margin: 0 1em;
+}
+.foodlist-glass p {
+    font-family: var(--font-base);
+    color: var(--color-secondary);
+    font-size: 1em;
+    line-height: 27px;
+    font-weight: 700;
+    text-align: right;
+}
+.foodlist-glass h2 {
+    font-family: var(--font-base);
+    color: var(--color-secondary);
+    padding-bottom: 1.2em;
+    font-size: 1.2em;
+    text-align: right;
+}
+.foodlist-glass a{
+    color: var(--color-alice-blue);
+    text-decoration: none;
+}
+.foodlist-glass a i {
+    margin-left: 0.2em;
+}
+.foodlist-glass .fa-route {
+    color: var(--color-alice-blue);
+}
+
+@keyframes text1 {
+    0%{
+        opacity: 0;
+        transform: translate(-2em,-50%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes text2 {
+    0%{
+        opacity: 0;
+        transform: translate(-2em,-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,-50%);
+    }
+}
+@media screen and (max-with: 1200px) {
+    .foodlist-glass h2{
+        padding: 2em 0 4em;   
+    }
+    .foodlist-glass p{
+        font-size: 3em;   
+    }
+}
+@media screen and (max-with: 750px) {
+    .foodlist-glass {
+        width: 90%;
+        height: initial;
+        min-height: 30em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .foodlist-h1-glass {
+        right: 74%;
+        top: 10%;
+        color: #1f1f1f;
+        background-attachment:initial ;
+        background-size: 100% 130%;
+    }
+    .foodlist-h1-regular {
+        top: 30%;
+    }
+    .foodlist-glass > div {
+        margin-top: 4em;
+    }
+    
+}
+
+@media screen and (max-height:1180){
+    .foodlist-glass h2 {
+        font-family: var(--font-base);
+        color: var(--color-secondary);
+        padding-bottom: 2em;
+        font-size: 1em;
+        border: 1px solid red;
+    }
+}
+@media screen and (max-height:700px){
+   .foodlist-header {
+    height: 700px;
+   }
+}
+
+@media screen and (max-height:500px){
+   .glass > div div:nth-child(1) {
+    display: none;
+   }
+}

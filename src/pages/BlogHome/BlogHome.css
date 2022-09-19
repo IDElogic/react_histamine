@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Righteous&family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+  --font-base: 'Quicksand';
+  --color-black: #020003;
+  --color-alice-blue:#f0f8ff;
+  --color-gray: #545454;
+  --color-isabelline: #f4f0ec;
+  --color-white: #f8f8ff;
+  --color-secondary: #2a2a3a;
+  --color-secondary3: #a6af00;
+  --color-smallow: coral;
+  --color-crocodil5: #f5fffa;
+  --color-primary: #36394a;
+  --color-ghostWhite: "rgba(248, 248, 255, .5)", 
+}
+*, *::after, *::before {
+
+    margin: 0;
+    box-sizing: border-box;
+}
+.bloghome {
+    margin: 0 auto;
+    background: rgb(244,240,236);
+    background: linear-gradient(90deg, rgba(244,240,236,1) 0%, rgba(240,248,255,1) 67%, rgba(245,255,250,1) 100%); 
+    height: 100%;
+    width: 100%;
+}
+.bloghome__container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+

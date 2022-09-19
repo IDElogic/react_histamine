@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Righteous&family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+  --font-base: 'Quicksand';
+  --color-black: #020003;
+  --color-alice-blue:#f0f8ff;
+  --color-gray: #545454;
+  --color-isabelline: #f4f0ec;
+  --color-white: #f8f8ff;
+  --color-secondary: #2a2a3a;
+  --color-secondary3: #a6af00;
+  --color-smallow: coral;
+  --color-crocodil5: #f5fffa;
+  --color-primary: #36394a;
+  --color-ghostWhite: "rgba(248, 248, 255, .5)", 
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+

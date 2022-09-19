@@ -1,0 +1,12 @@
+.emptyList-wrap {
+    display: flex;
+    justify-content: center;
+    
+  }
+  .emptyList-wrap h2 {
+   font-family: Quicksand;
+   font-size: 24px;
+   font-weight: 500;
+   letter-spacing: .1rem;
+   color: var(--color-secondary);
+  }

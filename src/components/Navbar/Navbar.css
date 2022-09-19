@@ -1,0 +1,96 @@
+.app__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:var(--color-black);
+    padding: 0 1.4rem;
+}
+.app__navbar-logo img {
+    width: 130px;
+}
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.app__navbar-links li {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-gray);
+    font-size: 1.2em;
+    margin: 0 .6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.app__navbar-links li:hover {
+    color: var(--color-white);   
+}
+.app__navbar-links a:hover {
+    border-top: 1px solid var(--color-gray);
+}
+.app__navbar-smallscreen {
+    display: none;
+}
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 50vh;
+    background: var(--color-secondary3);
+    transition: .5s ease;
+    flex-direction: column;
+    z-index: 5
+}
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 24px;
+    color: var(--color-secondary);
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.app__navbar-smallscreen_links {
+    list-style: none;
+}
+.app__navbar-smallscreen_links li {
+    margin: 1.5rem;
+    cursor: pointer;
+    color: var(--color-gray);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--font-base);
+    padding-right: 1em;   
+}
+.app__navbar-smallscreen_links li:hover {
+    color: var(--color-white);
+}
+@media screen and (min-width: 2000px) {
+    .app__navbar-logo img {
+        width: 210px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none;
+    }
+    .app__navbar-smallscreen_overlay {
+        height: 90vh;   
+    }
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+    .app__navbar-logo img {
+        width: 110px;
+    }
+    .app__navbar-smallscreen_overlay {
+        height: 50vh;   
+    }
+}

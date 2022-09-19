@@ -1,0 +1,66 @@
+.brochure2 {
+    background: url("../../assets/bg5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.brochure2 .glass-container {
+    position:relative; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter:blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+   
+ }
+#brochure2 .brochure2-h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: url("../../assets/bg8.jpg");
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    animation: text1 0.8s ease-in forwards;
+    padding: 1rem ; 
+    margin: 0 .5em;
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 1.6em;
+    letter-spacing: 0.09em;
+}
+.brochure2 .brochure2-h2 {
+    font-family: var(--font-base);
+    color:var(--color-alice-blue);
+    font-weight: 300;
+    letter-spacing: 0.09em;
+    font-size: 1.1em;
+    text-align:center;
+    text-transform:lowercase;
+    width: 100%;
+    padding: 1.2em 2em;
+    cursor: pointer;
+}
+.brochure2-contact{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-alice-blue);
+    padding: 0em; 
+    text-align: center;
+    
+}
+
+
+@media screen and (min-width: 1900px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+}
